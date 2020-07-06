@@ -1,0 +1,6 @@
+<select id="owner[name]" name="owner[name]">
+ <option> --Select an Owner --</option>
+    <% @owners.each do |owner| %>
+        <option value="<%= owner.id %>"><%= owner.name %></option>
+    <% end %>
+</select>
